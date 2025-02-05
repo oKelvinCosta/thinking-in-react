@@ -7,6 +7,6 @@ export default defineConfig({
   base: './', // Base path of project
   plugins: [react(), tailwindcss()],
   build: {
-    outDir: 'dist', // Output directory
+    outDir: 'docs', // Output directory
   },
 })
