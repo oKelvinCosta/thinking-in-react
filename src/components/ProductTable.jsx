@@ -32,11 +32,11 @@ function ProductTable({ products, filterText, inStockOnly }) {
     });
   
     return (
-      <table>
+      <table className="w-full">
         <thead>
           <tr>
-            <th>Name</th>
-            <th>Price</th>
+            <th className="p-2 px-3 text-left">Name</th>
+            <th className="p-2 px-3 ">Price</th>
           </tr>
         </thead>
         <tbody>{rows}</tbody>

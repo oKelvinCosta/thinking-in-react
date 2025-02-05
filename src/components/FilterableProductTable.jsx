@@ -7,7 +7,7 @@ function FilterableProductTable({ products }) {
     const [inStockOnly, setInStockOnly] = useState(false);
   
     return (
-      <div>
+      <div className='w-full'>
         <SearchBar 
           filterText={filterText} 
           inStockOnly={inStockOnly} 

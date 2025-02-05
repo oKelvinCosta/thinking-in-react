@@ -5,9 +5,9 @@ function ProductRow({ product }) {
       </span>;
   
     return (
-      <tr>
-        <td>{name}</td>
-        <td>{product.price}</td>
+      <tr className="outline-1 outline-gray-200 ">
+        <td className="p-2 px-3 text-left">{name}</td>
+        <td className="p-2 px-3 ">{product.price}</td>
       </tr>
     );
   }
