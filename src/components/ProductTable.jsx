@@ -6,6 +6,7 @@ function ProductTable({ products, filterText, inStockOnly }) {
     let lastCategory = null;
   
     products.forEach((product) => {
+      // If not found anything, return
       if (
         product.name.toLowerCase().indexOf(
           filterText.toLowerCase()
@@ -13,9 +14,11 @@ function ProductTable({ products, filterText, inStockOnly }) {
       ) {
         return;
       }
+      // If inStockOnly is true and product.stocked is false, return
       if (inStockOnly && !product.stocked) {
         return;
       }
+      // If product.category is not equal to lastCategory, push a new ProductCategoryRow
       if (product.category !== lastCategory) {
         rows.push(
           <ProductCategoryRow

@@ -1,9 +1,8 @@
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import tailwindLogo from "./assets/Tailwind_CSS_Logo.svg";
+
 import "./App.css";
 
 import FilterableProductTable from "./components/FilterableProductTable";
+import Stack from "./components/Stack";
 
 const PRODUCTS = [
   { category: "Fruits", price: "$1", stocked: true, name: "Apple" },
@@ -19,24 +18,8 @@ function App() {
     <>
       <div className="max-w-[360px] mt-[10%] mx-auto flex flex-col items-center">
         {/* Title */}
-      <div className="flex items-baseline">
-        <div>
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-          <p><b>Vite</b></p>
-        </div>
-        <div><p><b>+</b></p></div>
-        <div>
-          <img src={reactLogo} className="logo react" alt="React logo" />
-          <p><b>React</b></p>
-        </div>
-        <div><p><b>+</b></p></div>
-        <div>
-          <img src={tailwindLogo} className="logo" alt="React logo" />
-          <p><b>Tailwind</b></p>
-        </div>
-      </div>
-
-      <FilterableProductTable products={PRODUCTS} />
+        <Stack />
+        <FilterableProductTable products={PRODUCTS} />
       </div>
     </>
   );

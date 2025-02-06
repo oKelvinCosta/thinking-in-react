@@ -4,7 +4,7 @@ import react from '@vitejs/plugin-react-swc'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/thinking-in-react/', // Base path of project
+  base: './', // Base path of project
   plugins: [react(), tailwindcss()],
   build: {
     outDir: 'docs', // Output directory
